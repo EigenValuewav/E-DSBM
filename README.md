@@ -1,4 +1,4 @@
-<img width="1601" height="774" alt="image" src="https://github.com/user-attachments/assets/5f80e004-6ddd-4f1e-af6a-f1c4d7ebec78" /># E-DSBM: ENVELOPE-CONDITIONED SCHRÖDINGER BRIDGE MATCHING WITH TEMPORAL DYNAMICS FOR SPEECH ENHANCEMENT
+# E-DSBM: ENVELOPE-CONDITIONED SCHRÖDINGER BRIDGE MATCHING WITH TEMPORAL DYNAMICS FOR SPEECH ENHANCEMENT
 -----
 This repository contains the official PyTorch implementation for the paper "Envelope-Conditioned Schrödinger Bridge Matching with Temporal Dynamics for Speech Enhancement" (ICASSP 2026 submit).
 
