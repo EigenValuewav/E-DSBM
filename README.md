@@ -5,6 +5,8 @@ E-DSBM is a novel conditional generative model that optimizes the Diffusion Schr
 
 The inferred audio samples can be found at the following link. 
 
+
+
 ## Model Architecture:
 The E-DSBM architecture consists of a Conditional U-Net that takes the noisy spectrogram, a time step, and the temporal envelope as input. It has a multi-output structure, predicting both the drift required for enhancement and the speech envelope itself to reinforce the conditional learning.
 Figure 1: The Overview of E-DSBM Model Structure from the pape
@@ -13,8 +15,7 @@ Figure 1: The Overview of E-DSBM Model Structure from the pape
 
 
 ### Install Dependencies
-**python version>= 3.9**
-Install the required Python packages. For PyTorch, please follow the official instructions for your specific CUDA version
+Install the required Python(**python version>= 3.9**) packages. For PyTorch, please follow the official instructions for your specific CUDA version
 ```
 pip install -r requirements.txt
 ```
@@ -31,11 +32,15 @@ We train the model via running
 python main.py --mode train
 ```
 
+
+
 ### How to Inference on Single File
 To enhance a single noisy audio file, use the inference mode.
 ```
 python main.py --mode inference --checkpoint_path ./checkpoints/best_model.pth --test_clean_dir ./PATH/TO/CLEAN/SPEECH/ --test_noisy_dir ./PATH/TO/NOISY/SPEECH/ --inference_steps 7
 ```
+
+
 
 
 ### How to Evaluate
