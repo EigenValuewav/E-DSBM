@@ -1,5 +1,5 @@
 # E-DSBM: ENVELOPE-CONDITIONED SCHRÖDINGER BRIDGE MATCHING WITH TEMPORAL DYNAMICS FOR SPEECH ENHANCEMENT
-This repository contains the official PyTorch implementation for the paper "Envelope-Conditioned Schrödinger Bridge Matching with Temporal Dynamics for Speech Enhancement" (ICASSP 2026 submit).
+This repository contains the official PyTorch implementation for the paper "Envelope-Conditioned Schrödinger Bridge Matching with Temporal Dynamics for Speech Enhancement" (ICASSP 2026 under review).
 
 E-DSBM is a novel conditional generative model that optimizes the Diffusion Schrödinger Bridge Matching (DSBM) framework for speech enhancement. By conditioning the generative process on the temporal envelope of the noisy speech, E-DSBM preserves the intrinsic characteristics of the signal while restoring fine spectral details. Its efficient, unidirectional, and non-iterative design.
 
