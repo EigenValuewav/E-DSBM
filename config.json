@@ -1,0 +1,43 @@
+{
+    "data": {
+        "clean_dir": "./VoiceBank+DEMAND/wav_clean",
+        "noisy_dir": "./VoiceBank+DEMAND/wav_noisy",
+        "train_file": "./dataset_idx/training.txt",
+        "test_file": "./dataset_idx/test.txt"
+    },
+    "audio": {
+        "sampling_rate": 16000,
+        "segment_size": 32000,
+        "n_fft": 400,
+        "hop_size": 100,
+        "win_size": 400
+    },
+    "model": {
+        "dim": 64,
+        "dim_mults": [1, 2, 4],
+        "channels": 2,
+        "self_condition": true,
+        "envelope_emb_dim": 64
+    },
+    "train": {
+        "seed": 1234,
+        "epochs": 100,
+        "batch_size": 16,
+        "learning_rate": 0.0001,
+        "adam_b1": 0.8,
+        "adam_b2": 0.99,
+        "sigma": 0.01,
+        "num_workers": 8,
+        "save_interval": 10
+    },
+    "loss_weights": {
+        "stft": 1.0,
+        "sisnr": 1.0,
+        "envelope": 1.0
+    },
+    "dist_config": {
+        "dist_backend": "nccl",
+        "dist_url": "tcp://localhost:54321",
+        "world_size": 1
+    }
+}
