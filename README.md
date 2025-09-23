@@ -10,7 +10,6 @@ The inferred audio samples can be found at the [following link](https://eigenval
 ## Model Architecture:
 The E-DSBM architecture consists of a Conditional U-Net that takes the noisy spectrogram, a time step, and the temporal envelope as input. It has a multi-output structure, predicting both the drift required for enhancement and the speech envelope itself to reinforce the conditional learning.
 <img width="1601" height="774" alt="image" src="https://github.com/user-attachments/assets/1ca3fe42-5dad-4f77-8e04-e7f901976f83" />
-Figure 1: The Overview of E-DSBM Model Structure
 
 
 ### Install Dependencies
