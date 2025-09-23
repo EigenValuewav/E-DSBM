@@ -3,7 +3,7 @@ This repository contains the official PyTorch implementation for the paper "Enve
 
 E-DSBM is a novel conditional generative model that optimizes the Diffusion Schrödinger Bridge Matching (DSBM) framework for speech enhancement. By conditioning the generative process on the temporal envelope of the noisy speech, E-DSBM preserves the intrinsic characteristics of the signal while restoring fine spectral details. Its efficient, unidirectional, and non-iterative design.
 
-The inferred audio samples can be found at the [following link](https://eigenvaluewav.github.io/E-DSBM_Page/E-DSBM_page.html).
+The inferred audio samples can be found at the [following link](https://eigenvaluewav.github.io/E-DSBM_Page/E-DSBM_page.html)
 
 
 
