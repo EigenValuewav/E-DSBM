@@ -27,7 +27,7 @@ After preparing the dataset, open the config.json file. Revise the paths for **c
 
 We train the model via running
 ``` 
-python main.py --mode train
+$ python main.py --mode train
 ```
 
 
@@ -35,7 +35,7 @@ python main.py --mode train
 ### How to Inference on Single File
 To enhance a single noisy audio file, use the inference mode.
 ```
-python main.py --mode inference --checkpoint_path ./checkpoints/best_model.pth --test_clean_dir ./PATH/TO/CLEAN/SPEECH/ --test_noisy_dir ./PATH/TO/NOISY/SPEECH/ --inference_steps 7
+$ python main.py --mode inference --checkpoint_path ./checkpoints/best_model.pth --test_clean_dir ./PATH/TO/CLEAN/SPEECH/ --test_noisy_dir ./PATH/TO/NOISY/SPEECH/ --inference_steps 7
 ```
 
 
@@ -44,7 +44,7 @@ python main.py --mode inference --checkpoint_path ./checkpoints/best_model.pth -
 ### How to Evaluate
 To evaluate a trained model on the test set, provide the path to the checkpoint.
 ```
-python main.py --mode evaluate --checkpoint_path ./checkpoints/best_model.pth --test_clean_dir ./PATH/TO/CLEAN/SPEECH/ --test_noisy_dir ./PATH/TO/NOISY/SPEECH/ --inference_steps 7
+$ python main.py --mode evaluate --checkpoint_path ./checkpoints/best_model.pth --test_clean_dir ./PATH/TO/CLEAN/SPEECH/ --test_noisy_dir ./PATH/TO/NOISY/SPEECH/ --inference_steps 7
 ```
 
 
