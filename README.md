@@ -15,7 +15,7 @@ The E-DSBM architecture consists of a Conditional U-Net that takes the noisy spe
 ### Install Dependencies
 Install the required Python(**python version>= 3.9**) packages. For PyTorch, please follow the official instructions for your specific CUDA version
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 
